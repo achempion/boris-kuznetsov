@@ -26,11 +26,11 @@ const IndexPage = ({
     return (
       <div>
         {date && (
-          <div className="w-24 border-r border-accent pr-4">&nbsp;</div>
+          <div className="w-24 border-r border-accent dark:border-accent-dark pr-4">&nbsp;</div>
         )}
         <div key={edge.node.id} to={edge.node.frontmatter.slug} className="flex items-center">
-          <div className="text-4xl w-24 border-r border-accent pr-4">{date}&nbsp;</div>
-          <div className="border-b border-accent w-4 mr-2"></div>
+          <div className="text-4xl w-24 border-r border-accent dark:border-accent-dark pr-4">{date}&nbsp;</div>
+          <div className="border-b border-accent dark:border-accent-dark w-4 mr-2"></div>
           <Link to={edge.node.frontmatter.slug}><h3>{edge.node.frontmatter.title}</h3></Link>
         </div>
       </div>
@@ -72,8 +72,8 @@ const IndexPage = ({
         <h2>Research / Talks</h2>
         <div className="">
           {Research}
-          <div className="w-24 border-r border-accent pr-4">&nbsp;</div>
-          <div className="w-24 border-r border-accent pr-4">&nbsp;</div>
+          <div className="w-24 border-r border-accent dark:border-accent-dark pr-4">&nbsp;</div>
+          <div className="w-24 border-r border-accent dark:border-accent-dark pr-4">&nbsp;</div>
         </div>
       </div>
 
