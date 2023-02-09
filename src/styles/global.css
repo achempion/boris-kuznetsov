@@ -22,7 +22,7 @@ body {
 
 @layer components {
   .card {
-    @apply bg-[#A8DADC] w-80 h-36 rounded-lg flex border border-transparent transition-colors mr-6;
+    @apply bg-[#A8DADC] h-36 rounded-lg flex border border-transparent transition-colors px-4;
   }
   .card:hover {
     @apply border-accent dark:border-accent-dark cursor-pointer;
