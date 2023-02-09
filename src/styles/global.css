@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Text Me One";
+  font-size: 18px;
+}
+
+
+@layer base {
+  body {
+    @apply bg-[#F1FAEE] text-[#1D3557] dark:bg-[#1D3557] dark:text-[#A8DADC] ;
+  }
+  h1 {
+    @apply text-4xl text-accent dark:text-accent-dark mb-4 mt-8;
+  }
+  h2 {
+    @apply text-4xl text-accent dark:text-accent-dark mb-8 mt-12;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-[#A8DADC] w-80 h-36 rounded-lg flex border border-transparent transition-colors mr-6;
+  }
+  .card:hover {
+    @apply border-accent dark:border-accent-dark cursor-pointer;
+  }
+  .card h3 { @apply m-auto dark:text-[#1D3557]; }
+}
