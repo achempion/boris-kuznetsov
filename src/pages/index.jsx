@@ -46,7 +46,9 @@ const IndexPage = ({
     <Layout>
       <div className="text-4xl mb-24 flex">
         <div>
-          <StaticImage src="../images/boris-kuznetsov.jpeg" alt="Boris Kuznetsov" className="w-36 h-36 mr-12 rounded-full border border-accent dark:border-accent-dark mt-2" />
+          <div className="overflow-hidden w-36 h-36 mr-12 rounded-full border border-accent dark:border-accent-dark mt-2">
+            <StaticImage src="../images/boris-kuznetsov.jpeg" alt="Boris Kuznetsov" loading="eager" layout="fixed" width={142} height={142} imgStyle={{ borderRadius: '100%' }}/>
+          </div>
           <div className="flex ml-7 mt-2">
             <a href="https://twitter.com/adventofelixir" target="_blank" rel="noreferrer" className="mr-2">
               <FaTwitter className="w-6"/>
