@@ -71,7 +71,7 @@ const IndexPage = ({
       </div>
 
       <div>
-        <h2>Research / Talks</h2>
+        <h2 className="ml-4">Research / Talks</h2>
         <div className="">
           {Research}
           <div className="w-24 border-r border-accent dark:border-accent-dark pr-4">&nbsp;</div>
@@ -80,7 +80,7 @@ const IndexPage = ({
       </div>
 
       <div>
-        <h2>Software design</h2>
+        <h2 className="ml-4">Software design</h2>
         <div className="grid grid-cols-3 gap-4">
           {Design}
         </div>
