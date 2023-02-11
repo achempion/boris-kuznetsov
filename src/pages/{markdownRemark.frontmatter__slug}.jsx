@@ -9,7 +9,7 @@ const ResearchPageTemplate = ({data}) => {
   return (
     <Layout>
       <Link to="/">Home</Link>
-      <h1>{frontmatter.title}</h1>
+      <h1 className="relative z-10">{frontmatter.title}</h1>
       <div className="mt-[-10px]">{frontmatter.date}</div>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>

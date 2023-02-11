@@ -59,9 +59,9 @@ const IndexPage = ({
             </a>
           </div>
         </div>
-        <div className="">
+        <div>
           <div className="text-accent dark:text-accent-dark mb-8">Hey</div>
-          <div>
+          <div className="relative z-10">
             My name is Boris Kuznetsov <br />
             and I love making things for the web.
           </div>
